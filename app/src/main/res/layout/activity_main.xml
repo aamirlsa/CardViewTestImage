@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/mylayout"
+    android:background="@drawable/gradient_list"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<androidx.cardview.widget.CardView
+    app:cardCornerRadius="8dp"
+    android:layout_margin="5dp"
+    android:elevation="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/doctor">
+
+        </ImageView>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+</LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="85dp">
+
+
+
+        <androidx.cardview.widget.CardView
+        app:cardCornerRadius="8dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp">
+
+        <ImageView
+            android:background="@drawable/sunbehind"
+            android:layout_width="64dp"
+            android:layout_gravity="center"
+            android:layout_height="64dp"></ImageView>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginLeft="24dp"
+            app:cardCornerRadius="8dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp">
+
+            <ImageView
+                android:background="@drawable/airplane"
+                android:layout_width="64dp"
+                android:layout_gravity="center"
+                android:layout_height="64dp"></ImageView>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginLeft="24dp"
+            app:cardCornerRadius="8dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp">
+
+            <ImageView
+                android:background="@drawable/smallair"
+                android:layout_width="64dp"
+                android:layout_gravity="center"
+                android:layout_height="64dp"></ImageView>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginLeft="24dp"
+            app:cardCornerRadius="8dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp">
+
+            <ImageView
+                android:background="@drawable/sunset"
+                android:layout_width="64dp"
+                android:layout_gravity="center"
+                android:layout_height="64dp"></ImageView>
+        </androidx.cardview.widget.CardView>
+
+        <!--<androidx.cardview.widget.CardView
+            android:layout_marginLeft="8dp"
+            app:cardCornerRadius="8dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp">
+
+            <ImageView
+                android:background="@drawable/sunset"
+                android:layout_width="64dp"
+                android:layout_gravity="center"
+                android:layout_height="64dp"></ImageView>
+        </androidx.cardview.widget.CardView>-->
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginLeft="21dp"
+            android:textColor="#FFFFFF"
+            android:text="Weather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+
+
+        <TextView
+            android:layout_marginLeft="46dp"
+            android:textColor="#FFFFFF"
+            android:text="Aeroplane"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+
+
+
+
+        <TextView
+            android:layout_marginLeft="36dp"
+            android:textColor="#FFFFFF"
+            android:text="Aeroplane"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+
+
+        <TextView
+            android:layout_marginLeft="40dp"
+            android:textColor="#FFFFFF"
+            android:text="Sunrise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <com.luseen.spacenavigation.SpaceNavigationView
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        app:active_item_color="#f88400"
+        app:centre_button_color="#52e3bc"
+        app:inactive_item_color="#CCCCCC"
+        app:active_centre_button_icon_color="@color/space_white"
+        app:space_background_color="#FFFFFF"
+        app:centre_button_icon="@drawable/ic_home_black_30dp"
+        app:space_item_icon_size="30dp"
+        app:space_item_icon_only_size="@dimen/space_item_icon_only_size"
+        app:space_item_text_size="@dimen/space_item_text_default_size" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>
